@@ -1,0 +1,80 @@
+#content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: 40vh 40vh;
+    grid-column-gap: 5vh;
+    grid-row-gap: 5vh;
+}
+
+#content>div {
+    transform: unset;
+    background-color: var(--background);
+    height: 40vh;
+    padding: 15px;
+    width: 40vw;
+
+    border: var(--standardBorder);
+}
+
+#content>div>div {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+#startButton {
+    position: relative;
+    font-size: 12vh;
+    animation: pulse linear 1s infinite;
+    z-index: 3000;
+}
+
+@keyframes pulse {
+    from {
+        height: 40vh;
+        width: 40vw;
+    }
+    50% {
+        height: 42vh;
+        width: 42vw;
+        right: 0;
+        top: 0;
+        transform: translate(-1vw, -1vh);
+        font-size: 13.5vh;
+        text-shadow: #000000 1px 0 10px;
+    }
+    to {
+        height: 40vh;
+        width: 40vw;
+    }
+}
+
+hr {
+    margin: 1vh 0;
+}
+
+h1 {
+    font-size: 8vh;
+    margin: 1vh 0 2vh 0;
+}
+
+h2 {
+    font-size: 4.5vh;
+}
+
+h2::after {
+    content: ' ✔ ';
+}
+
+p {
+    font-size: 4vh;
+}
+
+#tutorialBlock {
+    overflow: auto;
+}

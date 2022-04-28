@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect 4 Delft</title>
+    <link rel = "stylesheet" type = "text/css" href = "/stylesheets/commonStyle.css">
+    <link rel = "stylesheet" type = "text/css" href = "/stylesheets/gameStyle.css">
+    <link rel = "icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body>
+    <div id="contentWrapper">
+        <header id="topContent">
+            <div class="textBox" id="corner"> Tiles: 0</div>
+            <div class="textBox" id="turnIndicator">Waiting for opponent</div>
+            <div class="textBox" id="timer">00:00</div>
+        </header>
+
+        <div id="resultPopup" class="hidden">
+            <h1>You lost!</h1>
+            <h2>Better luck next time!</h2>
+            <button id="restartButton" onClick="window.location.href='/'">
+                Back to menu
+            </button>
+            <button id="closePopup">
+                x
+            </button>
+        </div>
+
+        <div id="gameBoard">
+            <div> </div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
+
+            <div> </div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
+
+            <div> </div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
+
+            <div> </div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
+
+            <div> </div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
+
+            <div> </div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
+
+            <div > </div>
+            <div > </div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
+
+            <img src="images/blueTile.png" id="token" class="hidden">
+        </div>
+    </div>
+    <script src="javascripts/game.js"> </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect 4 Delft</title>
+    <link rel = "stylesheet" type = "text/css" href = "/stylesheets/commonStyle.css">
+    <link rel = "stylesheet" type = "text/css" href = "/stylesheets/splashStyle.css">
+    <link rel = "icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body>
+    <div id="contentWrapper">
+        <div id="content">
+            <div>
+                <div>
+                    <h1>Connect 4 (Delft Edition)</h1>
+                </div>
+            </div>
+            <button id = "startButton" onClick="window.location.href='/game'">
+                Play Online
+            </button>
+            <div>
+                <div>
+                    <h2>Players currently in game: <%=playersActive%></h2>
+                    <hr>
+                    <h2>Total games played: <%=gamesPlayed%></h2>
+                    <hr>
+                    <h2>Total tiles placed: <%=tilesPlaced%></h2>
+                </div>
+            </div>
+            <div id="tutorialBlock">
+                <h2>How to play</h2>
+                <hr>
+                <p>
+                    When it's your turn, click on a collumn to drop a tile
+                    of your color. The winner is the first one to have four
+                    tiles of their color in a row (straight or diagonally) somewhere on the board.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

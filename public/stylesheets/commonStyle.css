@@ -1,0 +1,62 @@
+:root {
+    --topBarColor: rgb(3, 49, 140);
+    --darkShade: rgb(75, 113, 191);
+    --boardBackgoundColor: ghostwhite;
+    --background: rgb(3, 49, 140);
+    --buttonColor: rgb(86, 132, 191);
+    --buttonColorOnHover: rgb(75, 113, 191);
+    --buttonColorActive: rgb(34, 95, 191);
+    
+    --topBarHeight: 8vh;
+    --gridSize: 7;
+    --tileEdgeLength: 10vh;
+
+    --standardBorder: 1px black solid;
+    --bottomPosition: 0vh;
+}
+
+*{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 5vh;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+#contentWrapper {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../images/library.jpg');
+    background-size: cover;
+
+    height: 100vh;
+}
+
+button {
+    border: var(--standardBorder);
+    background-color: var(--buttonColor);
+}
+
+button:hover {
+    background-color: var(--buttonColorOnHover);
+}
+
+button:active {
+    background-color: var(--buttonColorActive);
+}
+
+@media (max-width: 600px), (max-height: 300px){
+    body::before {
+        content: 'Your window is too small';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 100vw;
+        z-index: 1000;
+        line-height: 100vh;
+        background-color: red;
+    }
+}
